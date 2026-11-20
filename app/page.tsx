@@ -66,10 +66,10 @@ export default function Home() {
           <div>
             <h2 style={{ color: "#fff8e8" }}>Built for people who <i>work for themselves.</i></h2>
             <p>No HR department and no company plan means you sort out your own health. Yaad Doctor keeps it simple: one place to find care, compare options and get seen fast.</p>
-            <Link className="btn btn-orange" href="/find">Find care near me</Link>
+            <div className="actions"><Link className="btn btn-orange" href="/insurance">Get free insurance quotes</Link><Link className="btn btn-ghost" href="/find" style={{ color: "#fff8e8", borderColor: "rgba(255,255,255,.25)", background: "transparent" }}>Find care near me</Link></div>
           </div>
           <ul>
-            <li><b>Insurance in mind.</b> Bring your Sagicor, Guardian Life, Canopy or BUPA card and call ahead to confirm it's accepted.</li>
+            <li><b>Get covered.</b> Tell us what you need once and up to three FSC-licensed brokers compare Sagicor, Guardian Life, Canopy, BUPA and more for you, free.</li>
             <li><b>Pharmacies included.</b> Ask about NHF and JADEP drug cards at the counter.</li>
             <li><b>Sources on every listing.</b> We show where each detail came from, so you can judge how current it is.</li>
           </ul>
