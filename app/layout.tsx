@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: { default: "Yaad Doctor — find care across Jamaica", template: "%s · Yaad Doctor" },
   description: "Find doctors, hospitals, clinics, dentists and pharmacies across all 14 parishes of Jamaica, or see a doctor online in minutes through MDLink. Built for people who work for themselves.",
 };
-export const viewport: Viewport = { themeColor: "#0f4a30", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#f6efdf", colorScheme: "light", width: "device-width", initialScale: 1 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -27,7 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/find">Find care</Link>
               <Link href="/online" className="hide-sm">Online visits</Link>
               <Link href="/about" className="hide-sm">About the data</Link>
-              <a className="btn btn-orange btn-sm" href={MDLINK_URL} target="_blank" rel="noopener">See a doctor now</a>
+              <a className="btn btn-orange btn-sm" href={MDLINK_URL} target="_blank" rel="noopener"><span className="long">See a doctor now</span><span className="short">Doctor now</span></a>
             </div>
           </div>
         </nav>

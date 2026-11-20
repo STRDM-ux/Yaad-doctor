@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <div className="wrap hero">
         <div>
-          <span className="eyebrow"><span className="pulse" aria-hidden /> All 14 parishes · {listings.length} places to get care</span>
+          <span className="eyebrow"><span className="pulse" aria-hidden /> All 14 parishes · {listings.length} places</span>
           <h1>Good care, <i>on your schedule.</i></h1>
           <p className="lede">For musicians, tradespeople, sitters, drivers and everyone who works for themselves. Find a doctor, hospital, clinic, dentist or pharmacy near you, or see a doctor online in minutes.</p>
           <form className="search" action="/find" role="search">
