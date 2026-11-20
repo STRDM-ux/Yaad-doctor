@@ -51,7 +51,7 @@ export default async function ListingPage({ params }: { params: Promise<{ id: st
           <ul className="src">
             {l.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener">{s.name}</a> (as of {s.date})</li>)}
           </ul>
-          <p className="note">{l.approx ? "The map pin is approximate (town centre), so check the address before you travel. " : ""}Details can change. Please call ahead. Is this your practice? Corrections are welcome; see <Link href="/about">About the data</Link>.</p>
+          <p className="note">{l.approx ? "The map pin is approximate (town centre), so check the address before you travel. " : ""}Details can change. Please call ahead. Is this your practice? <Link href={`/for-practices?listing=${l.id}`}>Claim this listing</Link> to add your hours and the insurance cards you accept.</p>
         </div>
         {nearby.length > 0 && (
           <div className="panel">
