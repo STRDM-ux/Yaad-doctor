@@ -3,7 +3,8 @@ D = sys.argv[1]; OUT = sys.argv[2]
 osm = json.load(open(f'{D}/osm.json'))['elements']
 par = json.load(open(f'{D}/parishes.json'))['elements']
 fcdo = json.load(open(f'{D}/fcdo.json'))[1:]
-OSM_DATE = '2026-11-20'
+import datetime
+OSM_DATE = datetime.date.today().isoformat()
 
 # parish point-in-polygon (even-odd over all outer segments)
 PAR = []
